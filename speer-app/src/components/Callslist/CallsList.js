@@ -2,7 +2,7 @@ import Call from './Call/Call';
 import './CallsList.scss'
 
 function CallsList({calls}){
-    const listItems = calls.Details.map((calls, index) =>
+    const listItems = calls.map((calls, index) =>
       <Call 
         number={calls.number}
         type={calls.type} 
