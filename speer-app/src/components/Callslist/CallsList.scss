@@ -1,0 +1,42 @@
+@import '../../styles/Colors.scss';
+$padding: 5px;
+$sub-text-color: rgb(95, 95, 95);
+
+.callsList{
+    .callListItem{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        background: rgb(255, 255, 255);
+        color: black;
+        border-bottom: 1px solid lightblue;
+        width: 30vw;
+        .profilePic{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: min-content;
+            padding: $padding;
+            img{
+                width: 50px;
+            }
+        }
+        .callListItemNumberArea{
+            flex-grow: 2;
+            text-align: start;
+            padding: $padding;
+
+            .number{
+                padding: 1%;
+            }
+            .status{
+                padding: 1%;
+                color: $sub-text-color;
+            }
+        }
+        .time{
+            color: $sub-text-color;
+            padding: $padding;
+        }
+    }
+}

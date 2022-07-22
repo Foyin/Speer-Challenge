@@ -1,21 +1,36 @@
 import logo from './logo.svg';
 import './styles/App.scss';
-import CallsList from './components/Callslist/CallsList'
+import CallsList from './components/Callslist/CallsList';
+import ProfilePic from "./images/profile-icon.png";
 
-let archive = [];
+
+let archivedCalls = [
+  {
+    "number": "(343)-333-2433",
+    "type": "missed",
+    "status": "Caller called once",
+    "time":"7:50 PM"
+  }
+];
 let allCalls = 
 [
   {
-    "number": "33333333",
+    "number": "(343)-333-2433",
     "type": "missed",
     "status": "Caller called once",
     "time":"7:50 PM"
   },
   {
-    "number": "33333333",
-    "type": "missed",
+    "number": "(343)-333-2443",
+    "type": "complete",
     "status": "Caller called once",
-    "time":"7:50 PM"
+    "time":"7:55 PM"
+  },
+  {
+    "number": "(343)-333-2443",
+    "type": "complete",
+    "status": "Caller called once",
+    "time":"7:55 PM"
   }
 ]
 
@@ -26,7 +41,10 @@ function App() {
       <header className="App-header">
 
       </header>
-      <CallsList calls={allCalls}/>
+      <div className="main">
+        <CallsList calls={allCalls}/>
+        <div className="profileArea"><img src={ProfilePic}/></div>
+      </div>
     </div>
   );
 }

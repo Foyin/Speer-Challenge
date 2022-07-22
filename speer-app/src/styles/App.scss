@@ -3,6 +3,20 @@
 
 .App {
   text-align: center;
+  .main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .profileArea{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 90vh;
+      border-left: 1px solid lightblue;
+      margin: 25px;
+    }
+  }
 }
 
 .App-logo {

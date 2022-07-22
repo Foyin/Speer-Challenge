@@ -1,4 +1,4 @@
-import Call from './Call/Call';
+import Call from './Call';
 import './CallsList.scss'
 
 function CallsList({calls}){
@@ -11,8 +11,7 @@ function CallsList({calls}){
         key={index}/> 
     );
     return (
-      <div className="CallsList" >
-        <div className="CallsListTitle">Calls</div>
+      <div className="callsList" >
           {listItems}
       </div>
     );
