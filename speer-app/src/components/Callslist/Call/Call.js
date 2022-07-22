@@ -1,7 +1,12 @@
-function Call({call}){
+function Call({
+    call, 
+    number, 
+    type, 
+    status, 
+    time}){
     return(
         <div className="callListItem">
-            h   
+              
         </div> 
     );
 }

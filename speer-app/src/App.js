@@ -6,10 +6,10 @@ const calls =
 {
   "Details": [
     {
-      
-    },
-    {
-      
+      "number": "33333333",
+      "type": "missed",
+      "status": "Caller called once",
+      "time":"7:50 PM"
     }
 
   ],

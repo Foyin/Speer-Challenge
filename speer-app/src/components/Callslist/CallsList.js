@@ -3,7 +3,12 @@ import './CallsList.scss'
 
 function CallsList({calls}){
     const listItems = calls.Details.map((calls, index) =>
-      <Call key={index}/> 
+      <Call 
+        number={calls.number}
+        type={calls.type} 
+        status={calls.status}
+        time={calls.time}
+        key={index}/> 
     );
     return (
       <div className="CallsList" >
