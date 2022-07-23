@@ -4,7 +4,7 @@ $sub-text-color: rgb(95, 95, 95);
 
 .callsList{
     background-color: $background-accent;
-
+    overflow: scroll;
     .callsListHeader{
         display: flex;
         flex-direction: row;
@@ -23,7 +23,7 @@ $sub-text-color: rgb(95, 95, 95);
         }
         .callsListButton:hover{
             transition: 0.5s;
-            background-color: whitesmoke;
+            background-color: $hover-color;
         }
         .callsListButton:active{
             transition: 0.5s;
@@ -66,6 +66,6 @@ $sub-text-color: rgb(95, 95, 95);
     }
     .callListItem:hover{
         transition: 0.5s;
-        background-color: whitesmoke;
+        background-color: $hover-color;
     }
 }

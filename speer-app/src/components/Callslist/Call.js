@@ -4,7 +4,23 @@ function Call({
     number, 
     type, 
     status, 
-    time}){
+    time,
+    allOrArchived,
+    archived,
+    setArchived
+    }){
+
+
+    function handleCallClick(){
+        if (allOrArchived){
+            setArchived([...archived, {
+                "number": number,
+                "type": type,
+                "status": status,
+                "time": time
+            }]);
+        }
+    }
 
     function callType(){
         if (type === "missed"){
@@ -17,7 +33,7 @@ function Call({
             return "black";
     }
     return(
-        <div className="callListItem">
+        <div className="callListItem" title="Archive Call" onClick={handleCallClick}>
             <div className="profilePic">
                 <img src={ProfilePic}/>
             </div>
