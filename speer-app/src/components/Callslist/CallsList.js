@@ -12,6 +12,10 @@ function CallsList({calls}){
     );
     return (
       <div className="callsList" >
+            <div className="callsListHeader">
+              <div className="callsListButton">All</div>
+              <div className="callsListButton">Archive</div>
+            </div>
           {listItems}
       </div>
     );
