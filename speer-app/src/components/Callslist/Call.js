@@ -1,24 +1,29 @@
 import ProfilePic from "../../images/profile-icon.png"
 
 function Call({
+    id,
     number, 
     type, 
     status, 
     time,
     allOrArchived,
     archived,
-    setArchived
+    setArchived,
+    all,
+    setAll
     }){
 
 
     function handleCallClick(){
         if (allOrArchived){
             setArchived([...archived, {
+                "id": id,
                 "number": number,
                 "type": type,
                 "status": status,
                 "time": time
             }]);
+            setAll(all.filter(item => item.id !== id));
         }
     }
 
