@@ -83,33 +83,33 @@ function CallsList(){
         if(allOrArchived){
             return all.map((calls, index) =>
             <Call 
-                id={calls.id}
-                number={calls.number}
-                type={calls.type} 
-                status={calls.status}
-                time={calls.time}
-                allOrArchived={allOrArchived}
-                archived={archived}
-                setAll={setAll}
-                all={all}
-                setArchived={setArchived}
-                key={index}/> 
+              id={calls.id}
+              number={calls.number}
+              type={calls.type} 
+              status={calls.status}
+              time={calls.time}
+              allOrArchived={allOrArchived}
+              archived={archived}
+              setAll={setAll}
+              all={all}
+              setArchived={setArchived}
+              key={index}/> 
             );
         }
         else {
             return archived.map((calls, index) =>
             <Call 
-                id={index}
-                number={calls.number}
-                type={calls.type} 
-                status={calls.status}
-                time={calls.time}
-                allOrArchived={allOrArchived}
-                archived={archived}
-                all={all}
-                setAll={setAll}
-                setArchived={setArchived}
-                key={index}/> 
+              id={index}
+              number={calls.number}
+              type={calls.type} 
+              status={calls.status}
+              time={calls.time}
+              allOrArchived={allOrArchived}
+              archived={archived}
+              all={all}
+              setAll={setAll}
+              setArchived={setArchived}
+              key={index}/> 
             );
         }
     }

@@ -38,7 +38,7 @@ function Call({
             return "black";
     }
     return(
-        <div className="callListItem" title="Archive Call" onClick={handleCallClick}>
+        <div className="callListItem" title={allOrArchived ? "Archive Call" : ""} onClick={handleCallClick}>
             <div className="profilePic">
                 <img src={ProfilePic}/>
             </div>
