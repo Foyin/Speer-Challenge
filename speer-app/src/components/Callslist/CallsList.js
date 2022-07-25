@@ -48,7 +48,28 @@ let archivedCalls = [
       "type": "complete",
       "status": "Call Lasted 6 mins 13 secs",
       "time":"8:25 PM"
-    }
+    },
+    {
+        "id":"2",
+        "number": "(343)-333-2433",
+        "type": "missed",
+        "status": "Caller called 4 time(s)",
+        "time":"7:50 PM"
+      },
+      {
+        "id":"3",
+        "number": "(343)-333-2443",
+        "type": "complete",
+        "status": "Call Lasted 5 mins 23 secs",
+        "time":"7:55 AM"
+      },
+      {
+        "id":"4",
+        "number": "(343)-333-2443",
+        "type": "complete",
+        "status": "Call Lasted 6 mins 13 secs",
+        "time":"8:25 PM"
+      }
   ];
 
 
@@ -106,7 +127,9 @@ function CallsList(){
               <div className="callsListButton" onClick={handleAllClick}>All</div>
               <div className="callsListButton" onClick={handleArchiveClick}>Archive</div>
             </div>
-          {state()}
+            <div className="callsListItemContainer" >
+            {state()}
+            </div>
       </div>
     );
   }

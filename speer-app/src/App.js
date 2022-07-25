@@ -22,7 +22,6 @@ function App() {
           <div className="number">
             (647)-800-7154
           </div>
-
         </div>
       </div>
     </div>

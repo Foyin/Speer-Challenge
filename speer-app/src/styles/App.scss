@@ -4,12 +4,15 @@
 .App {
   text-align: center;
   background-color: $background-accent;
+  background-image: url("../images/overlay.png");
+
 
   .main{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    height: 100vh;
+    background-image: url("../images/overlay.png");
+    min-height: 100vh;
 
     .profileArea{
       display: flex;
@@ -17,17 +20,19 @@
       align-items: center;
       flex-direction: column;
       width: 100%;
-      background-color: $background-accent;
-
+      background-image: url("../images/overlay.png");
         img{
           width: 50%;
         }
         .profileName{
+          background-image: url("../images/overlay.png");
           font-size: x-large;
           padding: 20px;
         }
         .number{
+          background-image: url("../images/overlay.png");
           font-size: xx-large;
+          padding: 10px;
         }
     }
   }
@@ -46,13 +51,17 @@
 
 .App-header {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   font-size: calc(10px + 2vmin);
   height: min-content;
-  box-shadow: 0px 10px 10px 1px rgb(163, 163, 163);
+  border-bottom: 1px solid $accent-color;
+  background-color: white;
     img{
-      width: 5%;
-      margin-top: 1%;
+      width: 2%;
+      margin: 5px;
+      border: 1px solid $accent-color;
+      border-radius: 50%;
+      padding: 10px;
     }
 }
 

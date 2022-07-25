@@ -3,16 +3,14 @@ $padding: 5px;
 $sub-text-color: rgb(95, 95, 95);
 
 .callsList{
-    background-color: $background-accent;
-    overflow: scroll;
+    background-image: url("../../images/overlay.png");
     .callsListHeader{
         display: flex;
         flex-direction: row;
         width: 100%;
         height: 10vh;
-        background-color: $background-accent;
-
         .callsListButton{
+            cursor: pointer;
             color: black;
             border-left: 1px solid $accent-color;
             width: 50%;
@@ -22,50 +20,60 @@ $sub-text-color: rgb(95, 95, 95);
             flex-direction: column;
         }
         .callsListButton:hover{
+            background-image: url("../../images/overlay.png");
             transition: 0.5s;
             background-color: $hover-color;
         }
         .callsListButton:active{
+            background-image: url("../../images/overlay.png");
             transition: 0.5s;
-            background-color: $background-accent
+            background-color: $active-color
         }
     }
-    .callListItem{
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        color: black;
-        border-bottom: 1px solid $accent-color;
-        .profilePic{
+    .callsListItemContainer{
+        overflow: scroll;
+        .callListItem{
             display: flex;
             align-items: center;
-            justify-content: center;
-            width: min-content;
-            padding: $padding;
-            img{
-                width: 50px;
+            flex-direction: row;
+            color: black;
+            border-bottom: 1px solid $accent-color;
+            cursor: pointer;
+            .profilePic{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: min-content;
+                padding: $padding;
+                img{
+                    width: 50px;
+                }
             }
-        }
-        .callListItemNumberArea{
-            flex-grow: 2;
-            text-align: start;
-            padding: $padding;
+            .callListItemNumberArea{
+                flex-grow: 2;
+                text-align: start;
+                padding: $padding;
 
-            .number{
-                padding: 1%;
+                .number{
+                    padding: 1%;
+                }
+                .status{
+                    padding: 1%;
+                    color: $sub-text-color;
+                }
             }
-            .status{
-                padding: 1%;
+            .time{
                 color: $sub-text-color;
+                padding: $padding;
             }
         }
-        .time{
-            color: $sub-text-color;
-            padding: $padding;
+        .callListItem:hover{
+            transition: 0.5s;
+            background-color: $hover-color;
         }
-    }
-    .callListItem:hover{
-        transition: 0.5s;
-        background-color: $hover-color;
+        .callsListItem:active{
+            transition: 0.5s;
+            background-color: $active-color
+        }
     }
 }
