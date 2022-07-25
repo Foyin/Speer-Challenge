@@ -1,6 +1,6 @@
 # Speer-Challenge
 
-Made with reactJs and sass, no UI libraries
+Made with reactJs and sass, no UI libraries, hosted on heroku
 
 ## Usage
 
