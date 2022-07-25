@@ -1,0 +1,79 @@
+@import 'Colors.scss';
+
+
+.App {
+  text-align: center;
+  background-color: $background-accent;
+  background-image: url("../images/overlay.png");
+
+
+  .main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    background-image: url("../images/overlay.png");
+    min-height: 100vh;
+
+    .profileArea{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      background-image: url("../images/overlay.png");
+        img{
+          width: 50%;
+        }
+        .profileName{
+          background-image: url("../images/overlay.png");
+          font-size: x-large;
+          padding: 20px;
+        }
+        .number{
+          background-image: url("../images/overlay.png");
+          font-size: xx-large;
+          padding: 10px;
+        }
+    }
+  }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: calc(10px + 2vmin);
+  height: min-content;
+  border-bottom: 1px solid $accent-color;
+  background-color: white;
+    img{
+      width: 2%;
+      margin: 5px;
+      border: 1px solid $accent-color;
+      border-radius: 50%;
+      padding: 10px;
+    }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
