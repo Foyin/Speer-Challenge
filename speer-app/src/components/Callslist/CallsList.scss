@@ -18,6 +18,7 @@ $sub-text-color: rgb(95, 95, 95);
             justify-content: center;
             align-content: center;
             flex-direction: column;
+            font-size: large;
         }
         .callsListButton:hover{
             background-image: url("../../images/overlay.png");
@@ -26,7 +27,7 @@ $sub-text-color: rgb(95, 95, 95);
         }
         .callsListButton:active{
             background-image: url("../../images/overlay.png");
-            transition: 0.5s;
+            transition: 0.25s;
             background-color: $active-color
         }
     }
