@@ -2,7 +2,13 @@
 
 Made with reactJs and sass, no UI libraries
 
-To run clone repo and enter `npm run start`
+## Usage
+
+```
+git clone <this-repo>
+npm install
+npm run dev
+```
 
 [Demo](https://speer-challenge.herokuapp.com/)
 
