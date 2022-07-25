@@ -1,5 +1,7 @@
 # Speer-Challenge
 
+Made with reactJs and sass, no UI libraries
+
 To run clone repo and enter `npm run start`
 
 [Demo](https://speer-challenge.herokuapp.com/)
