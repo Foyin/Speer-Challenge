@@ -12,7 +12,7 @@ let archivedCalls = [
       "time":"7:50 PM"
     }
   ];
-  let allCalls = 
+let allCalls = 
   [
     {
       "id":"0",
@@ -50,26 +50,26 @@ let archivedCalls = [
       "time":"8:25 PM"
     },
     {
-        "id":"2",
-        "number": "(343)-333-2433",
-        "type": "missed",
-        "status": "Caller called 4 time(s)",
-        "time":"7:50 PM"
-      },
-      {
-        "id":"3",
-        "number": "(343)-333-2443",
-        "type": "complete",
-        "status": "Call Lasted 5 mins 23 secs",
-        "time":"7:55 AM"
-      },
-      {
-        "id":"4",
-        "number": "(343)-333-2443",
-        "type": "complete",
-        "status": "Call Lasted 6 mins 13 secs",
-        "time":"8:25 PM"
-      }
+      "id":"5",
+      "number": "(343)-333-2433",
+      "type": "missed",
+      "status": "Caller called 4 time(s)",
+      "time":"7:50 PM"
+    },
+    {
+      "id":"6",
+      "number": "(343)-333-2443",
+      "type": "complete",
+      "status": "Call Lasted 5 mins 23 secs",
+      "time":"7:55 AM"
+    },
+    {
+      "id":"7",
+      "number": "(343)-333-2443",
+      "type": "complete",
+      "status": "Call Lasted 6 mins 13 secs",
+      "time":"8:25 PM"
+    }
   ];
 
 
@@ -99,7 +99,7 @@ function CallsList(){
         else {
             return archived.map((calls, index) =>
             <Call 
-              id={index}
+              id={calls.id}
               number={calls.number}
               type={calls.type} 
               status={calls.status}
