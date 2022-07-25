@@ -113,6 +113,8 @@ function CallsList(){
             );
         }
     }
+    
+
 
     function handleAllClick(){
         setAllOrArchived(true);
@@ -124,8 +126,8 @@ function CallsList(){
     return (
       <div className="callsList" >
             <div className="callsListHeader">
-              <div className="callsListButton" onClick={handleAllClick}>All</div>
-              <div className="callsListButton" onClick={handleArchiveClick}>Archive</div>
+              <div className="callsListButton" style={{"background-color":allOrArchived ? "rgb(250, 250, 250)" : "rgb(250, 250, 250, 0)"}} onClick={handleAllClick}>All</div>
+              <div className="callsListButton" style={{"background-color":!allOrArchived ? "rgb(250, 250, 250)" : "rgb(250, 250, 250, 0)"}} onClick={handleArchiveClick}>Archive</div>
             </div>
             <div className="callsListItemContainer" >
             {state()}
